@@ -1,0 +1,5 @@
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Debug\RapiTools.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Debug\RapiTools.pdb
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Debug\RapiTools.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Debug\RapiTools.pdb
