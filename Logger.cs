@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Tools
+namespace RapiTools.Tools
 {
     /// <summary>
     /// This class bring a group of Methods that can be used to log differents events.
@@ -9,7 +9,7 @@ namespace Tools
     public static class Logger
     {
         #region Properties and Fields.
-        public static string DefaultPath { get; set; } = System.Reflection.Assembly.GetEntryAssembly().Location;
+        public static string DefaultLocation { get; set; } = System.Reflection.Assembly.GetEntryAssembly().Location;
 
         public static string ErrorFile { get; set; } = "error.log";
         public static string InfoFile { get; set; } = "info.log";
@@ -82,8 +82,13 @@ namespace Tools
         public static void Default(string message)
         {
             if (!File.Exists(DefaultFile))
-                File.Create(DefaultFile);
-
+            {
+                using (FileStream file = File.Create(DefaultFile))
+                {
+                    file.Close();
+                }
+            }
+            
             if (!string.IsNullOrEmpty(message) && !string.IsNullOrWhiteSpace(message))
             {
                 using (StreamWriter writer = new StreamWriter(DefaultFile))
