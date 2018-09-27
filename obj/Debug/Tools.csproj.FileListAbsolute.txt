@@ -3,3 +3,7 @@ C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogg
 C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Debug\Tools.csprojResolveAssemblyReference.cache
 C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Debug\RapiTools.dll
 C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Debug\RapiTools.pdb
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Debug\Google.Protobuf.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Debug\MySql.Data.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Debug\Google.Protobuf.xml
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Debug\MySql.Data.xml

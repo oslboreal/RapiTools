@@ -13,24 +13,25 @@ namespace Rapitools
         Entrada,
         Salida
     }
-    public class DBConnection
+    public class MySql
     {
-        public static DBConnection Instancia { get; set; }
+        public static MySql Instancia { get; set; }
         public string Password { get; set; } = "";
         public string User { get; set; } = "root";
         public string Server { get; set; } = "localhost";
         public string Database { get; set; } = "shadowless";
         public int LastAffectedRows { get; private set; } = 0;
+        public string[] LastReaderContent { get; private set; } = null;
         public MySqlConnection Conexion { get; set; }
 
-        private DBConnection()
+        private MySql()
         {
 
         }
 
-        static DBConnection()
+        static MySql()
         {
-            Instancia = new DBConnection();
+            Instancia = new MySql();
         }
 
         /// <summary>
@@ -92,16 +93,22 @@ namespace Rapitools
                             respu = true;
                             break;
                         case TipoOperacion.Salida:
-                            // TODO: Evaluar mecanismo para lectura Dinámica de columnas. 
-                            //var reader = cmd.ExecuteReader();
-                            //while (reader.Read())
-                            //{
-                            //    string someStringFromColumnZero = reader.GetString(0);
-                            //    string someStringFromColumnOne = reader.GetString(1);
-                            //}
+                            var reader = cmd.ExecuteReader();
+                            int cantidadColumnas = reader.FieldCount;
+                            string[] resultado = new string[cantidadColumnas - 1];
+
+                            while (reader.Read())
+                            {
+                                for (int i = 0; i < cantidadColumnas; i++)
+                                {
+                                    resultado[i] = reader.GetString(i);
+                                }
+                            }
+                            LastReaderContent = resultado;
                             respu = true;
                             break;
                         default:
+                            respu = false;
                             break;
                     }
                     Conexion.Close();
@@ -115,6 +122,7 @@ namespace Rapitools
             finally
             {
                 LastAffectedRows = 0;
+                LastReaderContent = null;
             }
         }
     }
