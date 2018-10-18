@@ -1,0 +1,9 @@
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Release\RapiTools.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Release\RapiTools.pdb
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Release\Google.Protobuf.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Release\MySql.Data.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Release\Google.Protobuf.xml
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\bin\Release\MySql.Data.xml
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Release\Tools.csprojResolveAssemblyReference.cache
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Release\RapiTools.dll
+C:\Users\mvallejo\Desktop\Visual Studio Projects\InteligentLogger\InteligentLogger\obj\Release\RapiTools.pdb

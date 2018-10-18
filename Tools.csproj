@@ -57,10 +57,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
+    <Compile Include="Clases\Config\Config.cs" />
+    <Compile Include="Clases\Fields\ISerializableField.cs" />
+    <Compile Include="Clases\Fields\NumericField.cs" />
+    <Compile Include="Clases\Fields\TextField.cs" />
+    <Compile Include="Clases\Fields\TimeField.cs" />
     <Compile Include="Complements\Crypto.cs" />
-    <Compile Include="Data.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Clases\Data\Data.cs" />
+    <Compile Include="Clases\Fields\Field.cs" />
+    <Compile Include="Clases\Logger\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
