@@ -62,6 +62,8 @@
     <Compile Include="Clases\Fields\NumericField.cs" />
     <Compile Include="Clases\Fields\TextField.cs" />
     <Compile Include="Clases\Fields\TimeField.cs" />
+    <Compile Include="Clases\QueueProcessing\EntryMessagesQueue.cs" />
+    <Compile Include="Clases\QueueProcessing\Message.cs" />
     <Compile Include="Complements\Crypto.cs" />
     <Compile Include="Clases\Data\Data.cs" />
     <Compile Include="Clases\Fields\Field.cs" />
