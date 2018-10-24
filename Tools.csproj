@@ -63,7 +63,9 @@
     <Compile Include="Clases\Fields\TextField.cs" />
     <Compile Include="Clases\Fields\TimeField.cs" />
     <Compile Include="Clases\QueueProcessing\EntryMessagesQueue.cs" />
+    <Compile Include="Clases\QueueProcessing\IStrategy.cs" />
     <Compile Include="Clases\QueueProcessing\Message.cs" />
+    <Compile Include="Clases\QueueProcessing\Server.cs" />
     <Compile Include="Complements\Crypto.cs" />
     <Compile Include="Clases\Data\Data.cs" />
     <Compile Include="Clases\Fields\Field.cs" />

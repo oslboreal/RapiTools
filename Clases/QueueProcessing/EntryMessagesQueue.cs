@@ -24,6 +24,8 @@ namespace RapiTools.Clases.QueueProcessing
         /// </summary>
         public void Listen()
         {
+            // New sub process listening everytime.
+            throw new NotImplementedException();
         }
 
         /// <summary>
