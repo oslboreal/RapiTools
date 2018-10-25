@@ -8,17 +8,18 @@ namespace RapiTools.Clases.QueueProcessing
 {
     internal class Message
     {
-        private int uid { get; set; }
+        private Guid id { get; set; }
         private string body { get; set; } 
+        public DateTime SendTime { get; set; }
 
         /// <summary>
         /// Constructor.
         /// </summary>
         /// <param name="uid"></param>
         /// <param name="body"></param>
-        public Message(int uid, string body)
+        public Message(Guid uid, string body)
         {
-            this.uid = uid;
+            this.id = uid;
             this.body = body;
         }
 
